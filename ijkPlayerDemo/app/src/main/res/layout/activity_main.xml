@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--<io.vov.vitamio.widget.VideoView-->
+    <!--android:id="@+id/surface_view"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true" />-->
+    <!--<tv.danmaku.ijk.media.widget.media.IjkVideoView-->
+    <!--android:id="@+id/ijkplayer"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"/>-->
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="12111" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="23234"
+        app:layout_constraintLeft_toRightOf="@+id/btn1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="#552"
+        android:gravity="center"
+        android:text="bbananna"
+        app:layout_constraintDimensionRatio="H,16:6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#f67"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Tab1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tab2" />
+
+
+    <TextView
+        android:id="@+id/tab2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#A67"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Tab2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tab1"
+        app:layout_constraintRight_toLeftOf="@+id/tab3" />
+
+
+    <TextView
+        android:id="@+id/tab3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="Tab3"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tab2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#767"
+        android:gravity="center"
+        android:text="dadadaddadaad"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
